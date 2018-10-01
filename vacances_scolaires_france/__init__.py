@@ -26,12 +26,9 @@ class Dates(object):
                     row[zone_key] = row[zone_key] == 'True'
                 self.data[key] = row
 
-    def check_zone(self, zone):
+    def zone_key(self, zone):
         if zone not in self.SUPPORTED_ZONES:
             raise ValueError('Unsupported zone: ' + zone)
-
-    def zone_key(self, zone):
-        self.check_zone(zone)
         return 'vacances_zone_' + zone.lower()
 
     def is_holiday(self, date):
