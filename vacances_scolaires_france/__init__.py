@@ -4,11 +4,18 @@ import os
 import datetime
 
 
-class Dates(object):
+class SchoolHolidayDates(object):
     SUPPORTED_ZONES = ['A', 'B', 'C']
+    SUPPORTED_HOLIDAY_NAMES = [
+        'Vacances de Noël',
+        "Vacances d'hiver",
+        'Vacances de printemps',
+        "Vacances d'été",
+        "Vacances de la Toussaint"
+    ]
 
     def __init__(self):
-        super(Dates, self).__init__()
+        super(SchoolHolidayDates, self).__init__()
         self.data = {}
         self.load_data()
 
@@ -18,44 +25,67 @@ class Dates(object):
         with open(filename) as f:
             reader = csv.DictReader(f)
             for row in reader:
-                key = datetime.datetime.strptime(
+                date = datetime.datetime.strptime(
                     row['date'], '%Y-%m-%d'
                 ).date()
+                row['date'] = date
+
+                # Only append rows where at least 1 zone is on holiday
+                is_holiday = False
                 for zone in self.SUPPORTED_ZONES:
                     zone_key = self.zone_key(zone)
                     row[zone_key] = row[zone_key] == 'True'
-                self.data[key] = row
+                    is_holiday = is_holiday or row[zone_key]
+
+                if is_holiday:
+                    self.data[date] = row
 
     def zone_key(self, zone):
         if zone not in self.SUPPORTED_ZONES:
             raise ValueError('Unsupported zone: ' + zone)
         return 'vacances_zone_' + zone.lower()
 
+    def check_name(self, name):
+        if name not in self.SUPPORTED_HOLIDAY_NAMES:
+            raise ValueError('Unknown holiday name: ' + name)
+
     def is_holiday(self, date):
-        row = self.data[date]
-        res = False
-        for zone in self.SUPPORTED_ZONES:
-            res = res or row[self.zone_key(zone)]
-        return res
+        return date in self.data
 
     def is_holiday_for_zone(self, date, zone):
-        row = self.data[date]
-        return row[self.zone_key(zone)]
+        holidays_for_year = self.holidays_for_year(date.year)
+        return holidays_for_year[date][self.zone_key(zone)]
 
     def holidays_for_year(self, year):
-        return {
-            k: self.data[k] for k in self.data.keys()
-            if self.is_holiday(k) and k.year == year
+        res = {
+            k: v for k, v in self.data.items()
+            if k.year == year
         }
 
+        if len(res) == 0:
+            raise ValueError('No data for year: ' + str(year))
+
+        return res
+
     def holiday_for_year_by_name(self, year, name):
+        self.check_name(name)
+
         return {
-            k: self.data[k] for k, v in self.data.items()
-            if v['nom_vacances'] == name and k.year == year
+            k: v for k, v in self.holidays_for_year(year).items()
+            if v['nom_vacances'] == name
         }
 
     def holidays_for_year_and_zone(self, year, zone):
         return {
-            k: self.data[k] for k in self.data.keys()
-            if self.is_holiday_for_zone(k, zone) and k.year == year
+            k: v for k, v in self.holidays_for_year(year).items()
+            if self.is_holiday_for_zone(k, zone)
+        }
+
+    def holidays_for_year_zone_and_name(self, year, zone, name):
+        self.check_name(name)
+
+        return {
+            k: v for k, v in self.holidays_for_year(year).items()
+            if self.is_holiday_for_zone(k, zone)
+            and v['nom_vacances'] == name
         }
