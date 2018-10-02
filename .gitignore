@@ -1,2 +1,6 @@
+.DS_Store
 venv
 *.pyc
+build/
+dist/
+vacances_scolaires_france.egg-info/

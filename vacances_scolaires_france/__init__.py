@@ -20,7 +20,7 @@ class SchoolHolidayDates(object):
         self.load_data()
 
     def load_data(self):
-        filename = os.path.join(os.path.dirname(__file__), '../data/data.csv')
+        filename = os.path.join(os.path.dirname(__file__), 'data/data.csv')
 
         with open(filename) as f:
             reader = csv.DictReader(f)
