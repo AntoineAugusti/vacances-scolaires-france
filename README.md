@@ -3,14 +3,16 @@
 ![PyPI](https://img.shields.io/pypi/vacances_scolaires_france.svg?style=flat-square)
 
 # Vacances scolaires France
-Permet de connaître les dates des vacances scolaires en France, depuis 2009, pour les zones A, B et C.
+This package can be used to find school holiday names in France, since 2009.
+
+In French in the text: permet de connaître les dates des vacances scolaires en France, depuis 2009, pour les zones A, B et C.
 
 ## Installation
 ```
 pip install vacances-scolaires-france
 ```
 
-## Utilisation
+## Usage
 
 ```python
 from vacances_scolaires_france import SchoolHolidayDates
@@ -37,6 +39,14 @@ d.holidays_for_year_and_zone(2017, 'A')
 d.holidays_for_year_zone_and_name(2017, 'A', 'Vacances de Noël')
 # {datetime.date(2017, 1, 1): OrderedDict([('date', datetime.date(2017, 1, 1)), ('vacances_zone_a', True), ('vacances_zone_b', True), ('vacances_zone_c', True), ('nom_vacances', 'Vacances de Noël')]), ...}
 ```
+
+## Holiday names
+You can use the following holiday names:
+- Vacances de Noël
+- Vacances d'hiver
+- Vacances de printemps
+- Vacances d'été
+- Vacances de la Toussaint
 
 ## Notice
 This software is available under the MIT license and was developed as part of the [Entrepreneur d'Intérêt Général program](https://entrepreneur-interet-general.etalab.gouv.fr) by the French government.
