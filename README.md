@@ -5,7 +5,13 @@
 # Vacances scolaires France
 This package can be used to find school holiday names in France, since 2009.
 
-In French in the text: permet de connaître les dates des vacances scolaires en France, depuis 2009, pour les zones A, B et C.
+In French in the text: cette librairie permet de connaître les dates des vacances scolaires en France, depuis 2009, pour les zones A, B et C.
+
+La répartition en trois zones de vacances A, B et C a été fixée par l'arrêté du 24 juillet 1995, publié au Journal Officiel du 8 août 1995.
+
+- Zone A : Académies de Caen, Clermont-Ferrand, Grenoble, Lyon, Montpellier, Nancy-Metz, Nantes, Rennes, Toulouse
+- Zone B : Académies de : Aix-Marseille, Amiens, Besançon, Dijon, Lille, Limoges, Nice, Orléans-Tours, Poitiers, Reims, Rouen , Strasbourg,
+- Zone C : Académies de Bordeaux, Créteil, Paris, Versailles
 
 ## Installation
 ```
@@ -40,6 +46,9 @@ d.holidays_for_year_zone_and_name(2017, 'A', 'Vacances de Noël')
 # {datetime.date(2017, 1, 1): OrderedDict([('date', datetime.date(2017, 1, 1)), ('vacances_zone_a', True), ('vacances_zone_b', True), ('vacances_zone_c', True), ('nom_vacances', 'Vacances de Noël')]), ...}
 ```
 
+## Zone names
+Use the capital letters A, B or C.
+
 ## Holiday names
 You can use the following holiday names:
 - Vacances de Noël
@@ -47,6 +56,9 @@ You can use the following holiday names:
 - Vacances de printemps
 - Vacances d'été
 - Vacances de la Toussaint
+
+## Data
+School holiday dates are coming from the ["Vacances scolaires par zones" opendata dataset](https://www.data.gouv.fr/fr/datasets/vacances-scolaires-par-zones/) available on data.gouv.fr.
 
 ## Notice
 This software is available under the MIT license and was developed as part of the [Entrepreneur d'Intérêt Général program](https://entrepreneur-interet-general.etalab.gouv.fr) by the French government.
