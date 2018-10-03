@@ -4,6 +4,18 @@ import os
 import datetime
 
 
+class UnsupportedYearException(Exception):
+    pass
+
+
+class UnsupportedZoneException(Exception):
+    pass
+
+
+class UnsupportedHolidayException(Exception):
+    pass
+
+
 class SchoolHolidayDates(object):
     SUPPORTED_ZONES = ['A', 'B', 'C']
     SUPPORTED_HOLIDAY_NAMES = [
@@ -42,12 +54,12 @@ class SchoolHolidayDates(object):
 
     def zone_key(self, zone):
         if zone not in self.SUPPORTED_ZONES:
-            raise ValueError('Unsupported zone: ' + zone)
+            raise UnsupportedZoneException('Unsupported zone: ' + zone)
         return 'vacances_zone_' + zone.lower()
 
     def check_name(self, name):
         if name not in self.SUPPORTED_HOLIDAY_NAMES:
-            raise ValueError('Unknown holiday name: ' + name)
+            raise UnsupportedHolidayException('Unknown holiday name: ' + name)
 
     def is_holiday(self, date):
         return date in self.data
@@ -63,7 +75,7 @@ class SchoolHolidayDates(object):
         }
 
         if len(res) == 0:
-            raise ValueError('No data for year: ' + str(year))
+            raise UnsupportedYearException('No data for year: ' + str(year))
 
         return res
 

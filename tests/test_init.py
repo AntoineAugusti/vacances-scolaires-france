@@ -3,6 +3,9 @@ import unittest
 import datetime
 
 from vacances_scolaires_france import SchoolHolidayDates
+from vacances_scolaires_france import UnsupportedYearException
+from vacances_scolaires_france import UnsupportedZoneException
+from vacances_scolaires_france import UnsupportedHolidayException
 
 
 class TestInit(unittest.TestCase):
@@ -25,9 +28,9 @@ class TestInit(unittest.TestCase):
         self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 2, 7), 'C'))
         self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 3, 7), 'A'))
 
-        with self.assertRaisesRegexp(ValueError, 'No data for year: 2005'):
+        with self.assertRaisesRegexp(UnsupportedYearException, 'No data for year: 2005'):
             d.is_holiday_for_zone(datetime.date(2005, 2, 7), 'D')
-        with self.assertRaisesRegexp(ValueError, 'Unsupported zone: D'):
+        with self.assertRaisesRegexp(UnsupportedZoneException, 'Unsupported zone: D'):
             self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 2, 7), 'D'))
 
     def test_holidays_for_year(self):
@@ -40,7 +43,7 @@ class TestInit(unittest.TestCase):
         for k, v in res.items():
             self.assertEquals(sorted(v.keys()), self.EXPECTED_KEYS)
 
-        with self.assertRaisesRegexp(ValueError, 'No data for year: 2020'):
+        with self.assertRaisesRegexp(UnsupportedYearException, 'No data for year: 2020'):
             self.assertEquals({}, d.holidays_for_year(2020))
 
     def test_holiday_for_year_by_name(self):
@@ -62,10 +65,10 @@ class TestInit(unittest.TestCase):
             expected_dates
         )
 
-        with self.assertRaisesRegexp(ValueError, 'No data for year: 2005'):
+        with self.assertRaisesRegexp(UnsupportedYearException, 'No data for year: 2005'):
             self.assertEquals({}, d.holiday_for_year_by_name(2005, 'Vacances de la Toussaint'))
 
-        with self.assertRaisesRegexp(ValueError, 'Unknown holiday name: Foo'):
+        with self.assertRaisesRegexp(UnsupportedHolidayException, 'Unknown holiday name: Foo'):
             self.assertEquals({}, d.holiday_for_year_by_name(2017, 'Foo'))
 
     def test_holidays_for_year_and_zone(self):
@@ -79,10 +82,10 @@ class TestInit(unittest.TestCase):
 
             self.assertTrue(v['vacances_zone_a'])
 
-        with self.assertRaisesRegexp(ValueError, 'No data for year: 2005'):
+        with self.assertRaisesRegexp(UnsupportedYearException, 'No data for year: 2005'):
             self.assertFalse(d.holidays_for_year_and_zone(2005, 'D'))
 
-        with self.assertRaisesRegexp(ValueError, 'Unsupported zone: D'):
+        with self.assertRaisesRegexp(UnsupportedZoneException, 'Unsupported zone: D'):
             self.assertFalse(d.holidays_for_year_and_zone(2017, 'D'))
 
     def test_holidays_for_year_zone_and_name(self):
@@ -105,13 +108,13 @@ class TestInit(unittest.TestCase):
             expected_dates
         )
 
-        with self.assertRaisesRegexp(ValueError, 'No data for year: 2005'):
+        with self.assertRaisesRegexp(UnsupportedYearException, 'No data for year: 2005'):
             d.holidays_for_year_zone_and_name(2005, 'A', 'Vacances de printemps')
 
-        with self.assertRaisesRegexp(ValueError, 'Unsupported zone: D'):
+        with self.assertRaisesRegexp(UnsupportedZoneException, 'Unsupported zone: D'):
             d.holidays_for_year_zone_and_name(2017, 'D', 'Vacances de printemps')
 
-        with self.assertRaisesRegexp(ValueError, 'Unknown holiday name: Foo'):
+        with self.assertRaisesRegexp(UnsupportedHolidayException, 'Unknown holiday name: Foo'):
             d.holidays_for_year_zone_and_name(2017, 'A', 'Foo')
 
     def test_supported_holidays_are_complete(self):
