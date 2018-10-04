@@ -64,6 +64,9 @@ You can use the following holiday names:
 ## Data
 School holiday dates are coming from the ["Vacances scolaires par zones" opendata dataset](https://www.data.gouv.fr/fr/datasets/vacances-scolaires-par-zones/) available on data.gouv.fr.
 
+## Bank holidays
+Interested in bank holidays as well (jours fériés in French)? There is another pip package for this! Check out https://github.com/AntoineAugusti/jours-feries-france
+
 ## Notice
 This software is available under the MIT license and was developed as part of the [Entrepreneur d'Intérêt Général program](https://entrepreneur-interet-general.etalab.gouv.fr) by the French government.
 
