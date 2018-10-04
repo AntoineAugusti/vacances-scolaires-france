@@ -2,7 +2,7 @@
 ![CircleCI](https://img.shields.io/circleci/project/github/AntoineAugusti/vacances-scolaires-france.svg?style=flat-square)
 
 # Vacances scolaires France
-This package can be used to find school holiday names in France, since 2009.
+This package can be used to find the dates of school holidays in France, since 2009.
 
 In French in the text: cette librairie permet de connaître les dates des vacances scolaires en France, depuis 2009, pour les zones A, B et C.
 
