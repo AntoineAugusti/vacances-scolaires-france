@@ -4,7 +4,7 @@ setup(
     name='vacances_scolaires_france',
     license='MIT',
     packages=['vacances_scolaires_france'],
-    version='0.3',
+    version='0.3.1',
     description='Get school holiday dates for metropolitan France',
     author='Antoine Augusti',
     author_email='hi@antoine-augusti.fr',
