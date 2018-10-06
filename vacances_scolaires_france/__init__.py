@@ -62,11 +62,14 @@ class SchoolHolidayDates(object):
             raise UnsupportedHolidayException('Unknown holiday name: ' + name)
 
     def is_holiday(self, date):
-        return date in self.data
+        return date in self.holidays_for_year(date.year)
 
     def is_holiday_for_zone(self, date, zone):
-        holidays_for_year = self.holidays_for_year(date.year)
-        return holidays_for_year[date][self.zone_key(zone)]
+        try:
+            holidays_for_year = self.holidays_for_year(date.year)
+            return holidays_for_year[date][self.zone_key(zone)]
+        except KeyError:
+            return False
 
     def holidays_for_year(self, year):
         res = {

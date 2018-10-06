@@ -20,6 +20,9 @@ class TestInit(unittest.TestCase):
         self.assertTrue(d.is_holiday(datetime.date(2017, 12, 25)))
         self.assertFalse(d.is_holiday(datetime.date(2017, 12, 1)))
 
+        with self.assertRaisesRegexp(UnsupportedYearException, 'No data for year: 2005'):
+            d.is_holiday(datetime.date(2005, 2, 7))
+
     def test_is_holiday_for_zone(self):
         d = SchoolHolidayDates()
 
@@ -27,6 +30,7 @@ class TestInit(unittest.TestCase):
         self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 2, 7), 'B'))
         self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 2, 7), 'C'))
         self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 3, 7), 'A'))
+        self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 6, 7), 'A'))
 
         with self.assertRaisesRegexp(UnsupportedYearException, 'No data for year: 2005'):
             d.is_holiday_for_zone(datetime.date(2005, 2, 7), 'D')
