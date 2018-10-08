@@ -50,6 +50,8 @@ class SchoolHolidayDates(object):
                     is_holiday = is_holiday or row[zone_key]
 
                 if is_holiday:
+                    if len(row['nom_vacances']) == 0:
+                        raise ValueError('Holiday name not set for date: ' + str(date))
                     self.data[date] = row
 
     def zone_key(self, zone):
