@@ -4017,6 +4017,7 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2018-12-29,True,True,True,Vacances de Noël
 2018-12-30,True,True,True,Vacances de Noël
 2018-12-31,True,True,True,Vacances de Noël
+2019-01-01,True,True,True,Vacances de Noël
 2019-01-02,True,True,True,Vacances de Noël
 2019-01-03,True,True,True,Vacances de Noël
 2019-01-04,True,True,True,Vacances de Noël
@@ -4381,6 +4382,7 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2019-12-29,True,True,True,Vacances de Noël
 2019-12-30,True,True,True,Vacances de Noël
 2019-12-31,True,True,True,Vacances de Noël
+2020-01-01,True,True,True,Vacances de Noël
 2020-01-02,True,True,True,Vacances de Noël
 2020-01-03,True,True,True,Vacances de Noël
 2020-01-04,True,True,True,Vacances de Noël
@@ -4746,4 +4748,3 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2020-12-29,False,False,False,
 2020-12-30,False,False,False,
 2020-12-31,False,False,False,
-
