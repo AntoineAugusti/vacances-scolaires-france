@@ -6,11 +6,17 @@ This package can be used to find the dates of school holidays in France, since 2
 
 In French in the text: cette librairie permet de connaître les dates des vacances scolaires en France, depuis 2009, pour les zones A, B et C.
 
-La répartition en trois zones de vacances A, B et C a été fixée par l'arrêté du 24 juillet 1995, publié au Journal Officiel du 8 août 1995.
+La répartition en trois zones de vacances A, B et C est définie de la façon suivante.
 
+**Septembre 1995 - Janvier 2016** :
 - Zone A : Académies de Caen, Clermont-Ferrand, Grenoble, Lyon, Montpellier, Nancy-Metz, Nantes, Rennes, Toulouse
-- Zone B : Académies de : Aix-Marseille, Amiens, Besançon, Dijon, Lille, Limoges, Nice, Orléans-Tours, Poitiers, Reims, Rouen , Strasbourg,
+- Zone B : Académies d'Aix-Marseille, Amiens, Besançon, Dijon, Lille, Limoges, Nice, Orléans-Tours, Poitiers, Reims, Rouen , Strasbourg,
 - Zone C : Académies de Bordeaux, Créteil, Paris, Versailles
+
+**Depuis janvier 2016** :
+- Zone A : Académies de Besançon, Bordeaux, Clermont-Ferrand, Dijon, Grenoble, Limoges, Lyon, Poitiers
+- Zone B : Académies d'Aix-Marseille, Amiens, Caen, Lille, Nantes, Nice, Nancy-Metz, Orléans-Tours, Reims, Rennes, Rouen, Strasbourg
+- Zone C : Académies de Créteil, Montpellier, Paris, Versailles, Toulouse
 
 ## Installation
 ```
