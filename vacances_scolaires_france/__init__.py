@@ -17,13 +17,13 @@ class UnsupportedHolidayException(Exception):
 
 
 class SchoolHolidayDates(object):
-    SUPPORTED_ZONES = ['A', 'B', 'C']
+    SUPPORTED_ZONES = ["A", "B", "C"]
     SUPPORTED_HOLIDAY_NAMES = [
-        'Vacances de Noël',
+        "Vacances de Noël",
         "Vacances d'hiver",
-        'Vacances de printemps',
+        "Vacances de printemps",
         "Vacances d'été",
-        "Vacances de la Toussaint"
+        "Vacances de la Toussaint",
     ]
 
     def __init__(self):
@@ -32,36 +32,34 @@ class SchoolHolidayDates(object):
         self.load_data()
 
     def load_data(self):
-        filename = os.path.join(os.path.dirname(__file__), 'data/data.csv')
+        filename = os.path.join(os.path.dirname(__file__), "data/data.csv")
 
         with open(filename) as f:
             reader = csv.DictReader(f)
             for row in reader:
-                date = datetime.datetime.strptime(
-                    row['date'], '%Y-%m-%d'
-                ).date()
-                row['date'] = date
+                date = datetime.datetime.strptime(row["date"], "%Y-%m-%d").date()
+                row["date"] = date
 
                 # Only append rows where at least 1 zone is on holiday
                 is_holiday = False
                 for zone in self.SUPPORTED_ZONES:
                     zone_key = self.zone_key(zone)
-                    row[zone_key] = row[zone_key] == 'True'
+                    row[zone_key] = row[zone_key] == "True"
                     is_holiday = is_holiday or row[zone_key]
 
                 if is_holiday:
-                    if len(row['nom_vacances']) == 0:
-                        raise ValueError('Holiday name not set for date: ' + str(date))
+                    if len(row["nom_vacances"]) == 0:
+                        raise ValueError("Holiday name not set for date: " + str(date))
                     self.data[date] = row
 
     def zone_key(self, zone):
         if zone not in self.SUPPORTED_ZONES:
-            raise UnsupportedZoneException('Unsupported zone: ' + zone)
-        return 'vacances_zone_' + zone.lower()
+            raise UnsupportedZoneException("Unsupported zone: " + zone)
+        return "vacances_zone_" + zone.lower()
 
     def check_name(self, name):
         if name not in self.SUPPORTED_HOLIDAY_NAMES:
-            raise UnsupportedHolidayException('Unknown holiday name: ' + name)
+            raise UnsupportedHolidayException("Unknown holiday name: " + name)
 
     def is_holiday(self, date):
         return date in self.holidays_for_year(date.year)
@@ -74,13 +72,10 @@ class SchoolHolidayDates(object):
             return False
 
     def holidays_for_year(self, year):
-        res = {
-            k: v for k, v in self.data.items()
-            if k.year == year
-        }
+        res = {k: v for k, v in self.data.items() if k.year == year}
 
         if len(res) == 0:
-            raise UnsupportedYearException('No data for year: ' + str(year))
+            raise UnsupportedYearException("No data for year: " + str(year))
 
         return res
 
@@ -88,13 +83,15 @@ class SchoolHolidayDates(object):
         self.check_name(name)
 
         return {
-            k: v for k, v in self.holidays_for_year(year).items()
-            if v['nom_vacances'] == name
+            k: v
+            for k, v in self.holidays_for_year(year).items()
+            if v["nom_vacances"] == name
         }
 
     def holidays_for_year_and_zone(self, year, zone):
         return {
-            k: v for k, v in self.holidays_for_year(year).items()
+            k: v
+            for k, v in self.holidays_for_year(year).items()
             if self.is_holiday_for_zone(k, zone)
         }
 
@@ -102,7 +99,7 @@ class SchoolHolidayDates(object):
         self.check_name(name)
 
         return {
-            k: v for k, v in self.holidays_for_year(year).items()
-            if self.is_holiday_for_zone(k, zone)
-            and v['nom_vacances'] == name
+            k: v
+            for k, v in self.holidays_for_year(year).items()
+            if self.is_holiday_for_zone(k, zone) and v["nom_vacances"] == name
         }
