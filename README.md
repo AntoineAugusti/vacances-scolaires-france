@@ -2,9 +2,9 @@
 ![CircleCI](https://img.shields.io/circleci/project/github/AntoineAugusti/vacances-scolaires-france.svg?style=flat-square)
 
 # Vacances scolaires France
-This package can be used to find the dates of school holidays in France, since 2009.
+This package can be used to find the dates of school holidays in France, since 1990.
 
-In French in the text: cette librairie permet de connaître les dates des vacances scolaires en France, depuis 2009, pour les zones A, B et C.
+In French in the text: cette librairie permet de connaître les dates des vacances scolaires en France, depuis 1990, pour les zones A, B et C.
 
 La répartition en trois zones de vacances A, B et C est définie de la façon suivante.
 
