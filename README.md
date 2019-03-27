@@ -66,6 +66,7 @@ You can use the following holiday names:
 - Vacances de printemps
 - Vacances d'été
 - Vacances de la Toussaint
+- Pont de l'Ascension (only for some years)
 
 ## Data
 School holiday dates are coming from the ["Vacances scolaires par zones" opendata dataset](https://www.data.gouv.fr/fr/datasets/vacances-scolaires-par-zones/) available on data.gouv.fr.

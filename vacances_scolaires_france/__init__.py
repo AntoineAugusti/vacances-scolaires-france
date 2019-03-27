@@ -24,6 +24,7 @@ class SchoolHolidayDates(object):
         "Vacances de printemps",
         "Vacances d'été",
         "Vacances de la Toussaint",
+        "Pont de l'Ascension",
     ]
 
     def __init__(self):

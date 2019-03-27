@@ -10740,10 +10740,10 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2019-05-27,False,False,False,
 2019-05-28,False,False,False,
 2019-05-29,False,False,False,
-2019-05-30,False,False,False,
-2019-05-31,False,False,False,
-2019-06-01,False,False,False,
-2019-06-02,False,False,False,
+2019-05-30,True,True,True,Pont de l'Ascension
+2019-05-31,True,True,True,Pont de l'Ascension
+2019-06-01,True,True,True,Pont de l'Ascension
+2019-06-02,True,True,True,Pont de l'Ascension
 2019-06-03,False,False,False,
 2019-06-04,False,False,False,
 2019-06-05,False,False,False,
@@ -11097,10 +11097,10 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2020-05-18,False,False,False,
 2020-05-19,False,False,False,
 2020-05-20,False,False,False,
-2020-05-21,False,False,False,
-2020-05-22,False,False,False,
-2020-05-23,False,False,False,
-2020-05-24,False,False,False,
+2020-05-21,True,True,True,Pont de l'Ascension
+2020-05-22,True,True,True,Pont de l'Ascension
+2020-05-23,True,True,True,Pont de l'Ascension
+2020-05-24,True,True,True,Pont de l'Ascension
 2020-05-25,False,False,False,
 2020-05-26,False,False,False,
 2020-05-27,False,False,False,

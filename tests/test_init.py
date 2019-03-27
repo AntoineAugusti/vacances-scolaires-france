@@ -172,7 +172,7 @@ class TestInit(unittest.TestCase):
     def test_supported_holidays_are_complete(self):
         d = SchoolHolidayDates()
 
-        res = d.holidays_for_year(2018)
+        res = d.holidays_for_year(2019)
 
         names = set()
         for _, v in res.items():
