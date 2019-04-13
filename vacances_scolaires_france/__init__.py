@@ -7,7 +7,7 @@ import datetime
 def to_date(dt):
     """Convert a date or datetime object to a date object."""
     if isinstance(dt, datetime.datetime):
-        return datetime.date()
+        return dt.date()
     else:
         return dt
 

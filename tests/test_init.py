@@ -26,6 +26,10 @@ class TestInit(unittest.TestCase):
         self.assertTrue(d.is_holiday(datetime.date(2017, 12, 25)))
         self.assertFalse(d.is_holiday(datetime.date(2017, 12, 1)))
 
+        # Test use of datetime instead of date object
+        self.assertTrue(d.is_holiday(datetime.datetime(2017, 12, 25)))
+        self.assertFalse(d.is_holiday(datetime.datetime(2017, 12, 1)))
+
         with self.assertRaisesRegexp(
             UnsupportedYearException, "No data for year: 1985"
         ):
@@ -39,6 +43,12 @@ class TestInit(unittest.TestCase):
         self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 2, 7), "C"))
         self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 3, 7), "A"))
         self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 6, 7), "A"))
+
+        # Test use of datetime instead of date object
+        self.assertTrue(d.is_holiday_for_zone(
+            datetime.datetime(2009, 2, 7), "A"))
+        self.assertFalse(d.is_holiday_for_zone(
+            datetime.datetime(2009, 6, 7), "A"))
 
         with self.assertRaisesRegexp(
             UnsupportedYearException, "No data for year: 1985"
