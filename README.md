@@ -39,6 +39,11 @@ d.is_holiday(datetime.date(2017, 12, 25))
 d.is_holiday_for_zone(datetime.date(2009, 2, 7), 'A')
 # Returns: True
 
+#  Datetime can be used instead of date
+d.is_holiday(datetime.datetime(2017, 12, 25))
+d.is_holiday_for_zone(datetime.datetime(2009, 2, 7), 'A')
+# Return : True
+
 # Get holidays for any zone in a year
 d.holidays_for_year(2018)
 # Returns: {datetime.date(2018, 1, 1): OrderedDict([('date', datetime.date(2018, 01, 01)), ('vacances_zone_a', True), ('vacances_zone_b', True), ('vacances_zone_c', True), ('nom_vacances', 'Vacances de Noël')]), ...}
