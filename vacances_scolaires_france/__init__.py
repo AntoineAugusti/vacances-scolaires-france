@@ -4,6 +4,14 @@ import os
 import datetime
 
 
+def to_date(dt):
+    """Convert a date or datetime object to a date object."""
+    if isinstance(dt, datetime.datetime):
+        return datetime.date()
+    else:
+        return dt
+
+
 class UnsupportedYearException(Exception):
     pass
 
@@ -63,12 +71,12 @@ class SchoolHolidayDates(object):
             raise UnsupportedHolidayException("Unknown holiday name: " + name)
 
     def is_holiday(self, date):
-        return date in self.holidays_for_year(date.year)
+        return to_date(date) in self.holidays_for_year(date.year)
 
     def is_holiday_for_zone(self, date, zone):
         try:
             holidays_for_year = self.holidays_for_year(date.year)
-            return holidays_for_year[date][self.zone_key(zone)]
+            return holidays_for_year[to_date(date)][self.zone_key(zone)]
         except KeyError:
             return False
 
