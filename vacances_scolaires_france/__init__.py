@@ -63,9 +63,13 @@ class SchoolHolidayDates(object):
             raise UnsupportedHolidayException("Unknown holiday name: " + name)
 
     def is_holiday(self, date):
+        if not type(date) is datetime.date:
+            raise ValueError("date should be a datetime.date")
         return date in self.holidays_for_year(date.year)
 
     def is_holiday_for_zone(self, date, zone):
+        if not type(date) is datetime.date:
+            raise ValueError("date should be a datetime.date")
         try:
             holidays_for_year = self.holidays_for_year(date.year)
             return holidays_for_year[date][self.zone_key(zone)]

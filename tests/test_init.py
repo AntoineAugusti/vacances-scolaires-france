@@ -31,6 +31,9 @@ class TestInit(unittest.TestCase):
         ):
             d.is_holiday(datetime.date(1985, 2, 7))
 
+        with self.assertRaisesRegexp(ValueError, "date should be a datetime.date"):
+            d.is_holiday(datetime.datetime(2017, 12, 1, 2, 0))
+
     def test_is_holiday_for_zone(self):
         d = SchoolHolidayDates()
 
@@ -46,6 +49,8 @@ class TestInit(unittest.TestCase):
             d.is_holiday_for_zone(datetime.date(1985, 2, 7), "D")
         with self.assertRaisesRegexp(UnsupportedZoneException, "Unsupported zone: D"):
             self.assertFalse(d.is_holiday_for_zone(datetime.date(2009, 2, 7), "D"))
+        with self.assertRaisesRegexp(ValueError, "date should be a datetime.date"):
+            d.is_holiday_for_zone(datetime.datetime(2017, 12, 1, 2, 0), "A")
 
     def test_holidays_for_year(self):
         d = SchoolHolidayDates()
