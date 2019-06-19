@@ -1,5 +1,6 @@
 [![Software License](https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square)](https://github.com/AntoineAugusti/vacances-scolaires-france/blob/master/LICENSE.md)
 ![CircleCI](https://img.shields.io/circleci/project/github/AntoineAugusti/vacances-scolaires-france.svg?style=flat-square)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/vacances-scolaires-france.svg?style=flat-square)
 
 # Vacances scolaires France
 This package can be used to find the dates of school holidays in France, since 1990.
