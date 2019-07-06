@@ -21,7 +21,7 @@ setup(
     extras_require={"dev": ["nose"]},
     package_data={"vacances_scolaires_france": ["data/data.csv"]},
     python_requires=">=2.7, <4",
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     classifiers=[
         "Development Status :: 3 - Alpha",
