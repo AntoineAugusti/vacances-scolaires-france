@@ -11199,7 +11199,7 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2020-08-28,True,True,True,Vacances d'été
 2020-08-29,True,True,True,Vacances d'été
 2020-08-30,True,True,True,Vacances d'été
-2020-08-31,False,False,False,
+2020-08-31,True,True,True,Vacances d'été
 2020-09-01,False,False,False,
 2020-09-02,False,False,False,
 2020-09-03,False,False,False,
@@ -11246,22 +11246,22 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2020-10-14,False,False,False,
 2020-10-15,False,False,False,
 2020-10-16,False,False,False,
-2020-10-17,False,False,False,
-2020-10-18,False,False,False,
-2020-10-19,False,False,False,
-2020-10-20,False,False,False,
-2020-10-21,False,False,False,
-2020-10-22,False,False,False,
-2020-10-23,False,False,False,
-2020-10-24,False,False,False,
-2020-10-25,False,False,False,
-2020-10-26,False,False,False,
-2020-10-27,False,False,False,
-2020-10-28,False,False,False,
-2020-10-29,False,False,False,
-2020-10-30,False,False,False,
-2020-10-31,False,False,False,
-2020-11-01,False,False,False,
+2020-10-17,True,True,True,Vacances de la Toussaint
+2020-10-18,True,True,True,Vacances de la Toussaint
+2020-10-19,True,True,True,Vacances de la Toussaint
+2020-10-20,True,True,True,Vacances de la Toussaint
+2020-10-21,True,True,True,Vacances de la Toussaint
+2020-10-22,True,True,True,Vacances de la Toussaint
+2020-10-23,True,True,True,Vacances de la Toussaint
+2020-10-24,True,True,True,Vacances de la Toussaint
+2020-10-25,True,True,True,Vacances de la Toussaint
+2020-10-26,True,True,True,Vacances de la Toussaint
+2020-10-27,True,True,True,Vacances de la Toussaint
+2020-10-28,True,True,True,Vacances de la Toussaint
+2020-10-29,True,True,True,Vacances de la Toussaint
+2020-10-30,True,True,True,Vacances de la Toussaint
+2020-10-31,True,True,True,Vacances de la Toussaint
+2020-11-01,True,True,True,Vacances de la Toussaint
 2020-11-02,False,False,False,
 2020-11-03,False,False,False,
 2020-11-04,False,False,False,
@@ -11309,16 +11309,381 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2020-12-16,False,False,False,
 2020-12-17,False,False,False,
 2020-12-18,False,False,False,
-2020-12-19,False,False,False,
-2020-12-20,False,False,False,
-2020-12-21,False,False,False,
-2020-12-22,False,False,False,
-2020-12-23,False,False,False,
-2020-12-24,False,False,False,
-2020-12-25,False,False,False,
-2020-12-26,False,False,False,
-2020-12-27,False,False,False,
-2020-12-28,False,False,False,
-2020-12-29,False,False,False,
-2020-12-30,False,False,False,
-2020-12-31,False,False,False,
+2020-12-19,True,True,True,Vacances de Noël
+2020-12-20,True,True,True,Vacances de Noël
+2020-12-21,True,True,True,Vacances de Noël
+2020-12-22,True,True,True,Vacances de Noël
+2020-12-23,True,True,True,Vacances de Noël
+2020-12-24,True,True,True,Vacances de Noël
+2020-12-25,True,True,True,Vacances de Noël
+2020-12-26,True,True,True,Vacances de Noël
+2020-12-27,True,True,True,Vacances de Noël
+2020-12-28,True,True,True,Vacances de Noël
+2020-12-29,True,True,True,Vacances de Noël
+2020-12-30,True,True,True,Vacances de Noël
+2020-12-31,True,True,True,Vacances de Noël
+2021-01-01,True,True,True,Vacances de Noël
+2021-01-02,True,True,True,Vacances de Noël
+2021-01-03,True,True,True,Vacances de Noël
+2021-01-04,False,False,False,
+2021-01-05,False,False,False,
+2021-01-06,False,False,False,
+2021-01-07,False,False,False,
+2021-01-08,False,False,False,
+2021-01-09,False,False,False,
+2021-01-10,False,False,False,
+2021-01-11,False,False,False,
+2021-01-12,False,False,False,
+2021-01-13,False,False,False,
+2021-01-14,False,False,False,
+2021-01-15,False,False,False,
+2021-01-16,False,False,False,
+2021-01-17,False,False,False,
+2021-01-18,False,False,False,
+2021-01-19,False,False,False,
+2021-01-20,False,False,False,
+2021-01-21,False,False,False,
+2021-01-22,False,False,False,
+2021-01-23,False,False,False,
+2021-01-24,False,False,False,
+2021-01-25,False,False,False,
+2021-01-26,False,False,False,
+2021-01-27,False,False,False,
+2021-01-28,False,False,False,
+2021-01-29,False,False,False,
+2021-01-30,False,False,False,
+2021-01-31,False,False,False,
+2021-02-01,False,False,False,
+2021-02-02,False,False,False,
+2021-02-03,False,False,False,
+2021-02-04,False,False,False,
+2021-02-05,False,False,False,
+2021-02-06,True,False,False,Vacances d'hiver
+2021-02-07,True,False,False,Vacances d'hiver
+2021-02-08,True,False,False,Vacances d'hiver
+2021-02-09,True,False,False,Vacances d'hiver
+2021-02-10,True,False,False,Vacances d'hiver
+2021-02-11,True,False,False,Vacances d'hiver
+2021-02-12,True,False,False,Vacances d'hiver
+2021-02-13,True,False,True,Vacances d'hiver
+2021-02-14,True,False,True,Vacances d'hiver
+2021-02-15,True,False,True,Vacances d'hiver
+2021-02-16,True,False,True,Vacances d'hiver
+2021-02-17,True,False,True,Vacances d'hiver
+2021-02-18,True,False,True,Vacances d'hiver
+2021-02-19,True,False,True,Vacances d'hiver
+2021-02-20,True,True,True,Vacances d'hiver
+2021-02-21,True,True,True,Vacances d'hiver
+2021-02-22,False,True,True,Vacances d'hiver
+2021-02-23,False,True,True,Vacances d'hiver
+2021-02-24,False,True,True,Vacances d'hiver
+2021-02-25,False,True,True,Vacances d'hiver
+2021-02-26,False,True,True,Vacances d'hiver
+2021-02-27,False,True,True,Vacances d'hiver
+2021-02-28,False,True,True,Vacances d'hiver
+2021-03-01,False,True,False,Vacances d'hiver
+2021-03-02,False,True,False,Vacances d'hiver
+2021-03-03,False,True,False,Vacances d'hiver
+2021-03-04,False,True,False,Vacances d'hiver
+2021-03-05,False,True,False,Vacances d'hiver
+2021-03-06,False,True,False,Vacances d'hiver
+2021-03-07,False,True,False,Vacances d'hiver
+2021-03-08,False,False,False,
+2021-03-09,False,False,False,
+2021-03-10,False,False,False,
+2021-03-11,False,False,False,
+2021-03-12,False,False,False,
+2021-03-13,False,False,False,
+2021-03-14,False,False,False,
+2021-03-15,False,False,False,
+2021-03-16,False,False,False,
+2021-03-17,False,False,False,
+2021-03-18,False,False,False,
+2021-03-19,False,False,False,
+2021-03-20,False,False,False,
+2021-03-21,False,False,False,
+2021-03-22,False,False,False,
+2021-03-23,False,False,False,
+2021-03-24,False,False,False,
+2021-03-25,False,False,False,
+2021-03-26,False,False,False,
+2021-03-27,False,False,False,
+2021-03-28,False,False,False,
+2021-03-29,False,False,False,
+2021-03-30,False,False,False,
+2021-03-31,False,False,False,
+2021-04-01,False,False,False,
+2021-04-02,False,False,False,
+2021-04-03,False,False,False,
+2021-04-04,False,False,False,
+2021-04-05,False,False,False,
+2021-04-06,False,False,False,
+2021-04-07,False,False,False,
+2021-04-08,False,False,False,
+2021-04-09,False,False,False,
+2021-04-10,True,False,False,Vacances de printemps
+2021-04-11,True,False,False,Vacances de printemps
+2021-04-12,True,False,False,Vacances de printemps
+2021-04-13,True,False,False,Vacances de printemps
+2021-04-14,True,False,False,Vacances de printemps
+2021-04-15,True,False,False,Vacances de printemps
+2021-04-16,True,False,False,Vacances de printemps
+2021-04-17,True,False,True,Vacances de printemps
+2021-04-18,True,False,True,Vacances de printemps
+2021-04-19,True,False,True,Vacances de printemps
+2021-04-20,True,False,True,Vacances de printemps
+2021-04-21,True,False,True,Vacances de printemps
+2021-04-22,True,False,True,Vacances de printemps
+2021-04-23,True,False,True,Vacances de printemps
+2021-04-24,True,True,True,Vacances de printemps
+2021-04-25,True,True,True,Vacances de printemps
+2021-04-26,False,True,True,Vacances de printemps
+2021-04-27,False,True,True,Vacances de printemps
+2021-04-28,False,True,True,Vacances de printemps
+2021-04-29,False,True,True,Vacances de printemps
+2021-04-30,False,True,True,Vacances de printemps
+2021-05-01,False,True,True,Vacances de printemps
+2021-05-02,False,True,True,Vacances de printemps
+2021-05-03,False,True,False,Vacances de printemps
+2021-05-04,False,True,False,Vacances de printemps
+2021-05-05,False,True,False,Vacances de printemps
+2021-05-06,False,True,False,Vacances de printemps
+2021-05-07,False,True,False,Vacances de printemps
+2021-05-08,False,True,False,Vacances de printemps
+2021-05-09,False,True,False,Vacances de printemps
+2021-05-10,False,False,False,
+2021-05-11,False,False,False,
+2021-05-12,False,False,False,
+2021-05-13,False,False,False,
+2021-05-14,False,False,False,
+2021-05-15,False,False,False,
+2021-05-16,False,False,False,
+2021-05-17,False,False,False,
+2021-05-18,False,False,False,
+2021-05-19,False,False,False,
+2021-05-20,False,False,False,
+2021-05-21,False,False,False,
+2021-05-22,False,False,False,
+2021-05-23,False,False,False,
+2021-05-24,False,False,False,
+2021-05-25,False,False,False,
+2021-05-26,False,False,False,
+2021-05-27,False,False,False,
+2021-05-28,False,False,False,
+2021-05-29,False,False,False,
+2021-05-30,False,False,False,
+2021-05-31,False,False,False,
+2021-06-01,False,False,False,
+2021-06-02,False,False,False,
+2021-06-03,False,False,False,
+2021-06-04,False,False,False,
+2021-06-05,False,False,False,
+2021-06-06,False,False,False,
+2021-06-07,False,False,False,
+2021-06-08,False,False,False,
+2021-06-09,False,False,False,
+2021-06-10,False,False,False,
+2021-06-11,False,False,False,
+2021-06-12,False,False,False,
+2021-06-13,False,False,False,
+2021-06-14,False,False,False,
+2021-06-15,False,False,False,
+2021-06-16,False,False,False,
+2021-06-17,False,False,False,
+2021-06-18,False,False,False,
+2021-06-19,False,False,False,
+2021-06-20,False,False,False,
+2021-06-21,False,False,False,
+2021-06-22,False,False,False,
+2021-06-23,False,False,False,
+2021-06-24,False,False,False,
+2021-06-25,False,False,False,
+2021-06-26,False,False,False,
+2021-06-27,False,False,False,
+2021-06-28,False,False,False,
+2021-06-29,False,False,False,
+2021-06-30,False,False,False,
+2021-07-01,False,False,False,
+2021-07-02,False,False,False,
+2021-07-03,False,False,False,
+2021-07-04,False,False,False,
+2021-07-05,False,False,False,
+2021-07-06,True,True,True,Vacances d'été
+2021-07-07,True,True,True,Vacances d'été
+2021-07-08,True,True,True,Vacances d'été
+2021-07-09,True,True,True,Vacances d'été
+2021-07-10,True,True,True,Vacances d'été
+2021-07-11,True,True,True,Vacances d'été
+2021-07-12,True,True,True,Vacances d'été
+2021-07-13,True,True,True,Vacances d'été
+2021-07-14,True,True,True,Vacances d'été
+2021-07-15,True,True,True,Vacances d'été
+2021-07-16,True,True,True,Vacances d'été
+2021-07-17,True,True,True,Vacances d'été
+2021-07-18,True,True,True,Vacances d'été
+2021-07-19,True,True,True,Vacances d'été
+2021-07-20,True,True,True,Vacances d'été
+2021-07-21,True,True,True,Vacances d'été
+2021-07-22,True,True,True,Vacances d'été
+2021-07-23,True,True,True,Vacances d'été
+2021-07-24,True,True,True,Vacances d'été
+2021-07-25,True,True,True,Vacances d'été
+2021-07-26,True,True,True,Vacances d'été
+2021-07-27,True,True,True,Vacances d'été
+2021-07-28,True,True,True,Vacances d'été
+2021-07-29,True,True,True,Vacances d'été
+2021-07-30,True,True,True,Vacances d'été
+2021-07-31,True,True,True,Vacances d'été
+2021-08-01,True,True,True,Vacances d'été
+2021-08-02,True,True,True,Vacances d'été
+2021-08-03,True,True,True,Vacances d'été
+2021-08-04,True,True,True,Vacances d'été
+2021-08-05,True,True,True,Vacances d'été
+2021-08-06,True,True,True,Vacances d'été
+2021-08-07,True,True,True,Vacances d'été
+2021-08-08,True,True,True,Vacances d'été
+2021-08-09,True,True,True,Vacances d'été
+2021-08-10,True,True,True,Vacances d'été
+2021-08-11,True,True,True,Vacances d'été
+2021-08-12,True,True,True,Vacances d'été
+2021-08-13,True,True,True,Vacances d'été
+2021-08-14,True,True,True,Vacances d'été
+2021-08-15,True,True,True,Vacances d'été
+2021-08-16,True,True,True,Vacances d'été
+2021-08-17,True,True,True,Vacances d'été
+2021-08-18,True,True,True,Vacances d'été
+2021-08-19,True,True,True,Vacances d'été
+2021-08-20,True,True,True,Vacances d'été
+2021-08-21,True,True,True,Vacances d'été
+2021-08-22,True,True,True,Vacances d'été
+2021-08-23,True,True,True,Vacances d'été
+2021-08-24,True,True,True,Vacances d'été
+2021-08-25,True,True,True,Vacances d'été
+2021-08-26,True,True,True,Vacances d'été
+2021-08-27,True,True,True,Vacances d'été
+2021-08-28,True,True,True,Vacances d'été
+2021-08-29,True,True,True,Vacances d'été
+2021-08-30,False,False,False,
+2021-08-31,False,False,False,
+2021-09-01,False,False,False,
+2021-09-02,False,False,False,
+2021-09-03,False,False,False,
+2021-09-04,False,False,False,
+2021-09-05,False,False,False,
+2021-09-06,False,False,False,
+2021-09-07,False,False,False,
+2021-09-08,False,False,False,
+2021-09-09,False,False,False,
+2021-09-10,False,False,False,
+2021-09-11,False,False,False,
+2021-09-12,False,False,False,
+2021-09-13,False,False,False,
+2021-09-14,False,False,False,
+2021-09-15,False,False,False,
+2021-09-16,False,False,False,
+2021-09-17,False,False,False,
+2021-09-18,False,False,False,
+2021-09-19,False,False,False,
+2021-09-20,False,False,False,
+2021-09-21,False,False,False,
+2021-09-22,False,False,False,
+2021-09-23,False,False,False,
+2021-09-24,False,False,False,
+2021-09-25,False,False,False,
+2021-09-26,False,False,False,
+2021-09-27,False,False,False,
+2021-09-28,False,False,False,
+2021-09-29,False,False,False,
+2021-09-30,False,False,False,
+2021-10-01,False,False,False,
+2021-10-02,False,False,False,
+2021-10-03,False,False,False,
+2021-10-04,False,False,False,
+2021-10-05,False,False,False,
+2021-10-06,False,False,False,
+2021-10-07,False,False,False,
+2021-10-08,False,False,False,
+2021-10-09,False,False,False,
+2021-10-10,False,False,False,
+2021-10-11,False,False,False,
+2021-10-12,False,False,False,
+2021-10-13,False,False,False,
+2021-10-14,False,False,False,
+2021-10-15,False,False,False,
+2021-10-16,False,False,False,
+2021-10-17,False,False,False,
+2021-10-18,False,False,False,
+2021-10-19,False,False,False,
+2021-10-20,False,False,False,
+2021-10-21,False,False,False,
+2021-10-22,False,False,False,
+2021-10-23,False,False,False,
+2021-10-24,False,False,False,
+2021-10-25,False,False,False,
+2021-10-26,False,False,False,
+2021-10-27,False,False,False,
+2021-10-28,False,False,False,
+2021-10-29,False,False,False,
+2021-10-30,False,False,False,
+2021-10-31,False,False,False,
+2021-11-01,False,False,False,
+2021-11-02,False,False,False,
+2021-11-03,False,False,False,
+2021-11-04,False,False,False,
+2021-11-05,False,False,False,
+2021-11-06,False,False,False,
+2021-11-07,False,False,False,
+2021-11-08,False,False,False,
+2021-11-09,False,False,False,
+2021-11-10,False,False,False,
+2021-11-11,False,False,False,
+2021-11-12,False,False,False,
+2021-11-13,False,False,False,
+2021-11-14,False,False,False,
+2021-11-15,False,False,False,
+2021-11-16,False,False,False,
+2021-11-17,False,False,False,
+2021-11-18,False,False,False,
+2021-11-19,False,False,False,
+2021-11-20,False,False,False,
+2021-11-21,False,False,False,
+2021-11-22,False,False,False,
+2021-11-23,False,False,False,
+2021-11-24,False,False,False,
+2021-11-25,False,False,False,
+2021-11-26,False,False,False,
+2021-11-27,False,False,False,
+2021-11-28,False,False,False,
+2021-11-29,False,False,False,
+2021-11-30,False,False,False,
+2021-12-01,False,False,False,
+2021-12-02,False,False,False,
+2021-12-03,False,False,False,
+2021-12-04,False,False,False,
+2021-12-05,False,False,False,
+2021-12-06,False,False,False,
+2021-12-07,False,False,False,
+2021-12-08,False,False,False,
+2021-12-09,False,False,False,
+2021-12-10,False,False,False,
+2021-12-11,False,False,False,
+2021-12-12,False,False,False,
+2021-12-13,False,False,False,
+2021-12-14,False,False,False,
+2021-12-15,False,False,False,
+2021-12-16,False,False,False,
+2021-12-17,False,False,False,
+2021-12-18,False,False,False,
+2021-12-19,False,False,False,
+2021-12-20,False,False,False,
+2021-12-21,False,False,False,
+2021-12-22,False,False,False,
+2021-12-23,False,False,False,
+2021-12-24,False,False,False,
+2021-12-25,False,False,False,
+2021-12-26,False,False,False,
+2021-12-27,False,False,False,
+2021-12-28,False,False,False,
+2021-12-29,False,False,False,
+2021-12-30,False,False,False,
+2021-12-31,False,False,False,
