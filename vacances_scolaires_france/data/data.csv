@@ -11610,13 +11610,13 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2021-10-13,False,False,False,
 2021-10-14,False,False,False,
 2021-10-15,False,False,False,
-2021-10-16,True,True,True,Vacances de la Toussaint
-2021-10-17,True,True,True,Vacances de la Toussaint
-2021-10-18,True,True,True,Vacances de la Toussaint
-2021-10-19,True,True,True,Vacances de la Toussaint
-2021-10-20,True,True,True,Vacances de la Toussaint
-2021-10-21,True,True,True,Vacances de la Toussaint
-2021-10-22,True,True,True,Vacances de la Toussaint
+2021-10-16,False,False,False,
+2021-10-17,False,False,False,
+2021-10-18,False,False,False,
+2021-10-19,False,False,False,
+2021-10-20,False,False,False,
+2021-10-21,False,False,False,
+2021-10-22,False,False,False,
 2021-10-23,True,True,True,Vacances de la Toussaint
 2021-10-24,True,True,True,Vacances de la Toussaint
 2021-10-25,True,True,True,Vacances de la Toussaint
@@ -11626,13 +11626,13 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2021-10-29,True,True,True,Vacances de la Toussaint
 2021-10-30,True,True,True,Vacances de la Toussaint
 2021-10-31,True,True,True,Vacances de la Toussaint
-2021-11-01,False,False,False,
-2021-11-02,False,False,False,
-2021-11-03,False,False,False,
-2021-11-04,False,False,False,
-2021-11-05,False,False,False,
-2021-11-06,False,False,False,
-2021-11-07,False,False,False,
+2021-11-01,True,True,True,Vacances de la Toussaint
+2021-11-02,True,True,True,Vacances de la Toussaint
+2021-11-03,True,True,True,Vacances de la Toussaint
+2021-11-04,True,True,True,Vacances de la Toussaint
+2021-11-05,True,True,True,Vacances de la Toussaint
+2021-11-06,True,True,True,Vacances de la Toussaint
+2021-11-07,True,True,True,Vacances de la Toussaint
 2021-11-08,False,False,False,
 2021-11-09,False,False,False,
 2021-11-10,False,False,False,
@@ -11778,43 +11778,43 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2022-03-30,False,False,False,
 2022-03-31,False,False,False,
 2022-04-01,False,False,False,
-2022-04-02,False,True,False,Vacances de printemps
-2022-04-03,False,True,False,Vacances de printemps
-2022-04-04,False,True,False,Vacances de printemps
-2022-04-05,False,True,False,Vacances de printemps
-2022-04-06,False,True,False,Vacances de printemps
-2022-04-07,False,True,False,Vacances de printemps
-2022-04-08,False,True,False,Vacances de printemps
-2022-04-09,True,True,False,Vacances de printemps
-2022-04-10,True,True,False,Vacances de printemps
-2022-04-11,True,True,False,Vacances de printemps
-2022-04-12,True,True,False,Vacances de printemps
-2022-04-13,True,True,False,Vacances de printemps
-2022-04-14,True,True,False,Vacances de printemps
-2022-04-15,True,True,False,Vacances de printemps
-2022-04-16,True,True,True,Vacances de printemps
-2022-04-17,True,True,True,Vacances de printemps
-2022-04-18,True,False,True,Vacances de printemps
-2022-04-19,True,False,True,Vacances de printemps
-2022-04-20,True,False,True,Vacances de printemps
-2022-04-21,True,False,True,Vacances de printemps
-2022-04-22,True,False,True,Vacances de printemps
-2022-04-23,True,False,True,Vacances de printemps
-2022-04-24,True,False,True,Vacances de printemps
-2022-04-25,False,False,True,Vacances de printemps
-2022-04-26,False,False,True,Vacances de printemps
-2022-04-27,False,False,True,Vacances de printemps
-2022-04-28,False,False,True,Vacances de printemps
-2022-04-29,False,False,True,Vacances de printemps
-2022-04-30,False,False,True,Vacances de printemps
-2022-05-01,False,False,True,Vacances de printemps
-2022-05-02,False,False,False,
-2022-05-03,False,False,False,
-2022-05-04,False,False,False,
-2022-05-05,False,False,False,
-2022-05-06,False,False,False,
-2022-05-07,False,False,False,
-2022-05-08,False,False,False,
+2022-04-02,False,False,False,
+2022-04-03,False,False,False,
+2022-04-04,False,False,False,
+2022-04-05,False,False,False,
+2022-04-06,False,False,False,
+2022-04-07,False,False,False,
+2022-04-08,False,False,False,
+2022-04-09,False,True,False,Vacances de printemps
+2022-04-10,False,True,False,Vacances de printemps
+2022-04-11,False,True,False,Vacances de printemps
+2022-04-12,False,True,False,Vacances de printemps
+2022-04-13,False,True,False,Vacances de printemps
+2022-04-14,False,True,False,Vacances de printemps
+2022-04-15,False,True,False,Vacances de printemps
+2022-04-16,True,True,False,Vacances de printemps
+2022-04-17,True,True,False,Vacances de printemps
+2022-04-18,True,True,False,Vacances de printemps
+2022-04-19,True,True,False,Vacances de printemps
+2022-04-20,True,True,False,Vacances de printemps
+2022-04-21,True,True,False,Vacances de printemps
+2022-04-22,True,True,False,Vacances de printemps
+2022-04-23,True,True,True,Vacances de printemps
+2022-04-24,True,True,True,Vacances de printemps
+2022-04-25,True,False,True,Vacances de printemps
+2022-04-26,True,False,True,Vacances de printemps
+2022-04-27,True,False,True,Vacances de printemps
+2022-04-28,True,False,True,Vacances de printemps
+2022-04-29,True,False,True,Vacances de printemps
+2022-04-30,True,False,True,Vacances de printemps
+2022-05-01,True,False,True,Vacances de printemps
+2022-05-02,False,False,True,Vacances de printemps
+2022-05-03,False,False,True,Vacances de printemps
+2022-05-04,False,False,True,Vacances de printemps
+2022-05-05,False,False,True,Vacances de printemps
+2022-05-06,False,False,True,Vacances de printemps
+2022-05-07,False,False,True,Vacances de printemps
+2022-05-08,False,False,True,Vacances de printemps
 2022-05-09,False,False,False,
 2022-05-10,False,False,False,
 2022-05-11,False,False,False,
