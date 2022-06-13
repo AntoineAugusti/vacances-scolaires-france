@@ -2,6 +2,7 @@
 import csv
 import os
 import datetime
+import requests
 
 
 class UnsupportedYearException(Exception):
@@ -26,14 +27,19 @@ class SchoolHolidayDates(object):
         "Vacances de la Toussaint",
         "Pont de l'Ascension",
     ]
+    STABLE_URL = "https://www.data.gouv.fr/fr/datasets/r/c3781037-dffb-4789-9af9-15a955336771"
+    BASE_FILE = os.path.join(os.path.dirname(__file__), "data/data.csv")
 
-    def __init__(self):
+    def __init__(self, download: bool = False, file: str = None):
         super(SchoolHolidayDates, self).__init__()
         self.data = {}
-        self.load_data()
+        self.load_data(download, file)
 
-    def load_data(self):
-        filename = os.path.join(os.path.dirname(__file__), "data/data.csv")
+    def load_data(self, download: bool = False, file: str = None):
+        if download:
+            r = requests.get(SchoolHolidayDates.STABLE_URL, allow_redirects=True)
+            open(file, 'wb').write(r.content)
+        filename = file if file and os.path.isfile(file) else SchoolHolidayDates.BASE_FILE
 
         with open(filename) as f:
             reader = csv.DictReader(f)
