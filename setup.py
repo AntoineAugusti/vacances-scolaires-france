@@ -19,6 +19,7 @@ setup(
         "holiday",
         "calendar",
     ],
+    install_requires=['requests'],
     extras_require={"dev": ["nose"]},
     package_data={"vacances_scolaires_france": ["data/data.csv"]},
     python_requires=">=2.7, <4",
