@@ -3,6 +3,8 @@ import csv
 import os
 import datetime
 import requests
+import collections
+collections.Callable = collections.abc.Callable
 
 
 class UnsupportedYearException(Exception):
