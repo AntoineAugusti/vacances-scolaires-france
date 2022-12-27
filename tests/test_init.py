@@ -185,3 +185,10 @@ class TestInit(unittest.TestCase):
 
         expected = set(SchoolHolidayDates.SUPPORTED_HOLIDAY_NAMES)
         self.assertEquals(names, expected)
+
+    def test_holidays_between(self):
+        d = SchoolHolidayDates()
+
+        res = d.holidays_between('2022-01-01', '2022-02-01')
+        for k, v in res.items():
+            self.assertEquals(sorted(v.keys()), self.EXPECTED_KEYS)
