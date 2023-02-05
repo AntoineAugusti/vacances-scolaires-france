@@ -19,7 +19,7 @@ setup(
         "holiday",
         "calendar",
     ],
-    extras_require={"dev": ["nose"]},
+    extras_require={"dev": ["pytest"]},
     package_data={"vacances_scolaires_france": ["data/data.csv"]},
     python_requires=">=2.7, <4",
     long_description=open("README.md", encoding="utf-8").read(),
