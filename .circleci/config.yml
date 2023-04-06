@@ -2,9 +2,12 @@ workflows:
   version: 2
   test:
     jobs:
-      - test-2.7
       - test-3.5
       - test-3.6
+      - test-3.7
+      - test-3.8
+      - test-3.9
+      - test-3.10
       - test-latest
 jobs:
   test-3.6: &test-template
@@ -29,7 +32,7 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            python -m venv venv || virtualenv -p /usr/bin/python2.7 venv
+            python -m venv venv
             . venv/bin/activate
             pip install -e .[dev]
       - save_cache:
@@ -41,19 +44,37 @@ jobs:
           name: Run test suite
           command: |
             . venv/bin/activate
-            nosetests .
+            pytest
   test-3.5:
     <<: *test-template
     docker:
       - image: circleci/python:3.5
     environment:
       PYTHON_VERSION=3.5
-  test-2.7:
+  test-3.7:
     <<: *test-template
     docker:
-      - image: circleci/python:2.7
+      - image: circleci/python:3.7
     environment:
-      PYTHON_VERSION=2.7
+      PYTHON_VERSION=3.7
+  test-3.8:
+    <<: *test-template
+    docker:
+      - image: circleci/python:3.8
+    environment:
+      PYTHON_VERSION=3.8
+  test-3.9:
+    <<: *test-template
+    docker:
+      - image: circleci/python:3.9
+    environment:
+      PYTHON_VERSION=3.9
+  test-3.10:
+    <<: *test-template
+    docker:
+      - image: circleci/python:3.10
+    environment:
+      PYTHON_VERSION=3.10
   test-latest:
     <<: *test-template
     docker:
