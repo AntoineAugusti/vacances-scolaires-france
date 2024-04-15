@@ -31,6 +31,8 @@ class SchoolHolidayDates(object):
         super(SchoolHolidayDates, self).__init__()
         self.data = {}
         self.load_data()
+        self.min_year = min(self.data.keys()).year
+        self.max_year = max(self.data.keys()).year
 
     def load_data(self):
         filename = os.path.join(os.path.dirname(__file__), "data/data.csv")
@@ -62,25 +64,27 @@ class SchoolHolidayDates(object):
         if name not in self.SUPPORTED_HOLIDAY_NAMES:
             raise UnsupportedHolidayException("Unknown holiday name: " + name)
 
-    def is_holiday(self, date):
+    def check_date(self, date):
         if not type(date) is datetime.date:
             raise ValueError("date should be a datetime.date")
-        return date in self.holidays_for_year(date.year)
+        if date.year < self.min_year or date.year > self.max_year:
+            raise UnsupportedYearException("No data for year: " + str(date.year))
+
+    def is_holiday(self, date):
+        self.check_date(date)
+        return date in self.data
 
     def is_holiday_for_zone(self, date, zone):
-        if not type(date) is datetime.date:
-            raise ValueError("date should be a datetime.date")
-        try:
-            holidays_for_year = self.holidays_for_year(date.year)
-            return holidays_for_year[date][self.zone_key(zone)]
-        except KeyError:
+        self.check_date(date)
+        if date not in self.data:
             return False
+        return self.data[date][self.zone_key(zone)]
 
     def holidays_for_year(self, year):
-        res = {k: v for k, v in self.data.items() if k.year == year}
-
-        if len(res) == 0:
+        if year < self.min_year or year > self.max_year:
             raise UnsupportedYearException("No data for year: " + str(year))
+        
+        res = {k: v for k, v in self.data.items() if k.year == year}
 
         return res
 
