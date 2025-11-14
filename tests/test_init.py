@@ -58,8 +58,8 @@ class TestInit(unittest.TestCase):
         for k, v in res.items():
             self.assertEqual(sorted(v.keys()), self.EXPECTED_KEYS)
 
-        with self.assertRaisesRegex(UnsupportedYearException, "No data for year: 2027"):
-            self.assertEqual({}, d.holidays_for_year(2027))
+        with self.assertRaisesRegex(UnsupportedYearException, "No data for year: 2028"):
+            self.assertEqual({}, d.holidays_for_year(2028))
 
     def test_holiday_for_year_by_name(self):
         d = SchoolHolidayDates()

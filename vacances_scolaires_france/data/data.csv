@@ -13390,7 +13390,7 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2026-08-28,True,True,True,Vacances d'été
 2026-08-29,True,True,True,Vacances d'été
 2026-08-30,True,True,True,Vacances d'été
-2026-08-31,False,False,False,
+2026-08-31,True,True,True,Vacances d'été
 2026-09-01,False,False,False,
 2026-09-02,False,False,False,
 2026-09-03,False,False,False,
@@ -13437,22 +13437,22 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2026-10-14,False,False,False,
 2026-10-15,False,False,False,
 2026-10-16,False,False,False,
-2026-10-17,False,False,False,
-2026-10-18,False,False,False,
-2026-10-19,False,False,False,
-2026-10-20,False,False,False,
-2026-10-21,False,False,False,
-2026-10-22,False,False,False,
-2026-10-23,False,False,False,
-2026-10-24,False,False,False,
-2026-10-25,False,False,False,
-2026-10-26,False,False,False,
-2026-10-27,False,False,False,
-2026-10-28,False,False,False,
-2026-10-29,False,False,False,
-2026-10-30,False,False,False,
-2026-10-31,False,False,False,
-2026-11-01,False,False,False,
+2026-10-17,True,True,True,Vacances de la Toussaint
+2026-10-18,True,True,True,Vacances de la Toussaint
+2026-10-19,True,True,True,Vacances de la Toussaint
+2026-10-20,True,True,True,Vacances de la Toussaint
+2026-10-21,True,True,True,Vacances de la Toussaint
+2026-10-22,True,True,True,Vacances de la Toussaint
+2026-10-23,True,True,True,Vacances de la Toussaint
+2026-10-24,True,True,True,Vacances de la Toussaint
+2026-10-25,True,True,True,Vacances de la Toussaint
+2026-10-26,True,True,True,Vacances de la Toussaint
+2026-10-27,True,True,True,Vacances de la Toussaint
+2026-10-28,True,True,True,Vacances de la Toussaint
+2026-10-29,True,True,True,Vacances de la Toussaint
+2026-10-30,True,True,True,Vacances de la Toussaint
+2026-10-31,True,True,True,Vacances de la Toussaint
+2026-11-01,True,True,True,Vacances de la Toussaint
 2026-11-02,False,False,False,
 2026-11-03,False,False,False,
 2026-11-04,False,False,False,
@@ -13500,16 +13500,381 @@ date,vacances_zone_a,vacances_zone_b,vacances_zone_c,nom_vacances
 2026-12-16,False,False,False,
 2026-12-17,False,False,False,
 2026-12-18,False,False,False,
-2026-12-19,False,False,False,
-2026-12-20,False,False,False,
-2026-12-21,False,False,False,
-2026-12-22,False,False,False,
-2026-12-23,False,False,False,
-2026-12-24,False,False,False,
-2026-12-25,False,False,False,
-2026-12-26,False,False,False,
-2026-12-27,False,False,False,
-2026-12-28,False,False,False,
-2026-12-29,False,False,False,
-2026-12-30,False,False,False,
-2026-12-31,False,False,False,
+2026-12-19,True,True,True,Vacances de Noël
+2026-12-20,True,True,True,Vacances de Noël
+2026-12-21,True,True,True,Vacances de Noël
+2026-12-22,True,True,True,Vacances de Noël
+2026-12-23,True,True,True,Vacances de Noël
+2026-12-24,True,True,True,Vacances de Noël
+2026-12-25,True,True,True,Vacances de Noël
+2026-12-26,True,True,True,Vacances de Noël
+2026-12-27,True,True,True,Vacances de Noël
+2026-12-28,True,True,True,Vacances de Noël
+2026-12-29,True,True,True,Vacances de Noël
+2026-12-30,True,True,True,Vacances de Noël
+2026-12-31,True,True,True,Vacances de Noël
+2027-01-01,True,True,True,Vacances de Noël
+2027-01-02,True,True,True,Vacances de Noël
+2027-01-03,True,True,True,Vacances de Noël
+2027-01-04,False,False,False,
+2027-01-05,False,False,False,
+2027-01-06,False,False,False,
+2027-01-07,False,False,False,
+2027-01-08,False,False,False,
+2027-01-09,False,False,False,
+2027-01-10,False,False,False,
+2027-01-11,False,False,False,
+2027-01-12,False,False,False,
+2027-01-13,False,False,False,
+2027-01-14,False,False,False,
+2027-01-15,False,False,False,
+2027-01-16,False,False,False,
+2027-01-17,False,False,False,
+2027-01-18,False,False,False,
+2027-01-19,False,False,False,
+2027-01-20,False,False,False,
+2027-01-21,False,False,False,
+2027-01-22,False,False,False,
+2027-01-23,False,False,False,
+2027-01-24,False,False,False,
+2027-01-25,False,False,False,
+2027-01-26,False,False,False,
+2027-01-27,False,False,False,
+2027-01-28,False,False,False,
+2027-01-29,False,False,False,
+2027-01-30,False,False,False,
+2027-01-31,False,False,False,
+2027-02-01,False,False,False,
+2027-02-02,False,False,False,
+2027-02-03,False,False,False,
+2027-02-04,False,False,False,
+2027-02-05,False,False,False,
+2027-02-06,False,False,True,Vacances d'hiver
+2027-02-07,False,False,True,Vacances d'hiver
+2027-02-08,False,False,True,Vacances d'hiver
+2027-02-09,False,False,True,Vacances d'hiver
+2027-02-10,False,False,True,Vacances d'hiver
+2027-02-11,False,False,True,Vacances d'hiver
+2027-02-12,False,False,True,Vacances d'hiver
+2027-02-13,True,False,True,Vacances d'hiver
+2027-02-14,True,False,True,Vacances d'hiver
+2027-02-15,True,False,True,Vacances d'hiver
+2027-02-16,True,False,True,Vacances d'hiver
+2027-02-17,True,False,True,Vacances d'hiver
+2027-02-18,True,False,True,Vacances d'hiver
+2027-02-19,True,False,True,Vacances d'hiver
+2027-02-20,True,True,True,Vacances d'hiver
+2027-02-21,True,True,True,Vacances d'hiver
+2027-02-22,True,True,False,Vacances d'hiver
+2027-02-23,True,True,False,Vacances d'hiver
+2027-02-24,True,True,False,Vacances d'hiver
+2027-02-25,True,True,False,Vacances d'hiver
+2027-02-26,True,True,False,Vacances d'hiver
+2027-02-27,True,True,False,Vacances d'hiver
+2027-02-28,True,True,False,Vacances d'hiver
+2027-03-01,False,True,False,Vacances d'hiver
+2027-03-02,False,True,False,Vacances d'hiver
+2027-03-03,False,True,False,Vacances d'hiver
+2027-03-04,False,True,False,Vacances d'hiver
+2027-03-05,False,True,False,Vacances d'hiver
+2027-03-06,False,True,False,Vacances d'hiver
+2027-03-07,False,True,False,Vacances d'hiver
+2027-03-08,False,False,False,
+2027-03-09,False,False,False,
+2027-03-10,False,False,False,
+2027-03-11,False,False,False,
+2027-03-12,False,False,False,
+2027-03-13,False,False,False,
+2027-03-14,False,False,False,
+2027-03-15,False,False,False,
+2027-03-16,False,False,False,
+2027-03-17,False,False,False,
+2027-03-18,False,False,False,
+2027-03-19,False,False,False,
+2027-03-20,False,False,False,
+2027-03-21,False,False,False,
+2027-03-22,False,False,False,
+2027-03-23,False,False,False,
+2027-03-24,False,False,False,
+2027-03-25,False,False,False,
+2027-03-26,False,False,False,
+2027-03-27,False,False,False,
+2027-03-28,False,False,False,
+2027-03-29,False,False,False,
+2027-03-30,False,False,False,
+2027-03-31,False,False,False,
+2027-04-01,False,False,False,
+2027-04-02,False,False,False,
+2027-04-03,False,False,True,Vacances de printemps
+2027-04-04,False,False,True,Vacances de printemps
+2027-04-05,False,False,True,Vacances de printemps
+2027-04-06,False,False,True,Vacances de printemps
+2027-04-07,False,False,True,Vacances de printemps
+2027-04-08,False,False,True,Vacances de printemps
+2027-04-09,False,False,True,Vacances de printemps
+2027-04-10,True,False,True,Vacances de printemps
+2027-04-11,True,False,True,Vacances de printemps
+2027-04-12,True,False,True,Vacances de printemps
+2027-04-13,True,False,True,Vacances de printemps
+2027-04-14,True,False,True,Vacances de printemps
+2027-04-15,True,False,True,Vacances de printemps
+2027-04-16,True,False,True,Vacances de printemps
+2027-04-17,True,True,True,Vacances de printemps
+2027-04-18,True,True,True,Vacances de printemps
+2027-04-19,True,True,False,Vacances de printemps
+2027-04-20,True,True,False,Vacances de printemps
+2027-04-21,True,True,False,Vacances de printemps
+2027-04-22,True,True,False,Vacances de printemps
+2027-04-23,True,True,False,Vacances de printemps
+2027-04-24,True,True,False,Vacances de printemps
+2027-04-25,True,True,False,Vacances de printemps
+2027-04-26,False,True,False,Vacances de printemps
+2027-04-27,False,True,False,Vacances de printemps
+2027-04-28,False,True,False,Vacances de printemps
+2027-04-29,False,True,False,Vacances de printemps
+2027-04-30,False,True,False,Vacances de printemps
+2027-05-01,False,True,False,Vacances de printemps
+2027-05-02,False,True,False,Vacances de printemps
+2027-05-03,False,False,False,
+2027-05-04,False,False,False,
+2027-05-05,False,False,False,
+2027-05-06,True,True,True,Pont de l'Ascension
+2027-05-07,True,True,True,Pont de l'Ascension
+2027-05-08,True,True,True,Pont de l'Ascension
+2027-05-09,False,False,False,
+2027-05-10,False,False,False,
+2027-05-11,False,False,False,
+2027-05-12,False,False,False,
+2027-05-13,False,False,False,
+2027-05-14,False,False,False,
+2027-05-15,False,False,False,
+2027-05-16,False,False,False,
+2027-05-17,False,False,False,
+2027-05-18,False,False,False,
+2027-05-19,False,False,False,
+2027-05-20,False,False,False,
+2027-05-21,False,False,False,
+2027-05-22,False,False,False,
+2027-05-23,False,False,False,
+2027-05-24,False,False,False,
+2027-05-25,False,False,False,
+2027-05-26,False,False,False,
+2027-05-27,False,False,False,
+2027-05-28,False,False,False,
+2027-05-29,False,False,False,
+2027-05-30,False,False,False,
+2027-05-31,False,False,False,
+2027-06-01,False,False,False,
+2027-06-02,False,False,False,
+2027-06-03,False,False,False,
+2027-06-04,False,False,False,
+2027-06-05,False,False,False,
+2027-06-06,False,False,False,
+2027-06-07,False,False,False,
+2027-06-08,False,False,False,
+2027-06-09,False,False,False,
+2027-06-10,False,False,False,
+2027-06-11,False,False,False,
+2027-06-12,False,False,False,
+2027-06-13,False,False,False,
+2027-06-14,False,False,False,
+2027-06-15,False,False,False,
+2027-06-16,False,False,False,
+2027-06-17,False,False,False,
+2027-06-18,False,False,False,
+2027-06-19,False,False,False,
+2027-06-20,False,False,False,
+2027-06-21,False,False,False,
+2027-06-22,False,False,False,
+2027-06-23,False,False,False,
+2027-06-24,False,False,False,
+2027-06-25,False,False,False,
+2027-06-26,False,False,False,
+2027-06-27,False,False,False,
+2027-06-28,False,False,False,
+2027-06-29,False,False,False,
+2027-06-30,False,False,False,
+2027-07-01,False,False,False,
+2027-07-02,False,False,False,
+2027-07-03,True,True,True,Vacances d'été
+2027-07-04,True,True,True,Vacances d'été
+2027-07-05,True,True,True,Vacances d'été
+2027-07-06,True,True,True,Vacances d'été
+2027-07-07,True,True,True,Vacances d'été
+2027-07-08,True,True,True,Vacances d'été
+2027-07-09,True,True,True,Vacances d'été
+2027-07-10,True,True,True,Vacances d'été
+2027-07-11,True,True,True,Vacances d'été
+2027-07-12,True,True,True,Vacances d'été
+2027-07-13,True,True,True,Vacances d'été
+2027-07-14,True,True,True,Vacances d'été
+2027-07-15,True,True,True,Vacances d'été
+2027-07-16,True,True,True,Vacances d'été
+2027-07-17,True,True,True,Vacances d'été
+2027-07-18,True,True,True,Vacances d'été
+2027-07-19,True,True,True,Vacances d'été
+2027-07-20,True,True,True,Vacances d'été
+2027-07-21,True,True,True,Vacances d'été
+2027-07-22,True,True,True,Vacances d'été
+2027-07-23,True,True,True,Vacances d'été
+2027-07-24,True,True,True,Vacances d'été
+2027-07-25,True,True,True,Vacances d'été
+2027-07-26,True,True,True,Vacances d'été
+2027-07-27,True,True,True,Vacances d'été
+2027-07-28,True,True,True,Vacances d'été
+2027-07-29,True,True,True,Vacances d'été
+2027-07-30,True,True,True,Vacances d'été
+2027-07-31,True,True,True,Vacances d'été
+2027-08-01,True,True,True,Vacances d'été
+2027-08-02,True,True,True,Vacances d'été
+2027-08-03,True,True,True,Vacances d'été
+2027-08-04,True,True,True,Vacances d'été
+2027-08-05,True,True,True,Vacances d'été
+2027-08-06,True,True,True,Vacances d'été
+2027-08-07,True,True,True,Vacances d'été
+2027-08-08,True,True,True,Vacances d'été
+2027-08-09,True,True,True,Vacances d'été
+2027-08-10,True,True,True,Vacances d'été
+2027-08-11,True,True,True,Vacances d'été
+2027-08-12,True,True,True,Vacances d'été
+2027-08-13,True,True,True,Vacances d'été
+2027-08-14,True,True,True,Vacances d'été
+2027-08-15,True,True,True,Vacances d'été
+2027-08-16,True,True,True,Vacances d'été
+2027-08-17,True,True,True,Vacances d'été
+2027-08-18,True,True,True,Vacances d'été
+2027-08-19,True,True,True,Vacances d'été
+2027-08-20,True,True,True,Vacances d'été
+2027-08-21,True,True,True,Vacances d'été
+2027-08-22,True,True,True,Vacances d'été
+2027-08-23,True,True,True,Vacances d'été
+2027-08-24,True,True,True,Vacances d'été
+2027-08-25,True,True,True,Vacances d'été
+2027-08-26,True,True,True,Vacances d'été
+2027-08-27,True,True,True,Vacances d'été
+2027-08-28,True,True,True,Vacances d'été
+2027-08-29,True,True,True,Vacances d'été
+2027-08-30,True,True,True,Vacances d'été
+2027-08-31,True,True,True,Vacances d'été
+2027-09-01,False,False,False,
+2027-09-02,False,False,False,
+2027-09-03,False,False,False,
+2027-09-04,False,False,False,
+2027-09-05,False,False,False,
+2027-09-06,False,False,False,
+2027-09-07,False,False,False,
+2027-09-08,False,False,False,
+2027-09-09,False,False,False,
+2027-09-10,False,False,False,
+2027-09-11,False,False,False,
+2027-09-12,False,False,False,
+2027-09-13,False,False,False,
+2027-09-14,False,False,False,
+2027-09-15,False,False,False,
+2027-09-16,False,False,False,
+2027-09-17,False,False,False,
+2027-09-18,False,False,False,
+2027-09-19,False,False,False,
+2027-09-20,False,False,False,
+2027-09-21,False,False,False,
+2027-09-22,False,False,False,
+2027-09-23,False,False,False,
+2027-09-24,False,False,False,
+2027-09-25,False,False,False,
+2027-09-26,False,False,False,
+2027-09-27,False,False,False,
+2027-09-28,False,False,False,
+2027-09-29,False,False,False,
+2027-09-30,False,False,False,
+2027-10-01,False,False,False,
+2027-10-02,False,False,False,
+2027-10-03,False,False,False,
+2027-10-04,False,False,False,
+2027-10-05,False,False,False,
+2027-10-06,False,False,False,
+2027-10-07,False,False,False,
+2027-10-08,False,False,False,
+2027-10-09,False,False,False,
+2027-10-10,False,False,False,
+2027-10-11,False,False,False,
+2027-10-12,False,False,False,
+2027-10-13,False,False,False,
+2027-10-14,False,False,False,
+2027-10-15,False,False,False,
+2027-10-16,False,False,False,
+2027-10-17,False,False,False,
+2027-10-18,False,False,False,
+2027-10-19,False,False,False,
+2027-10-20,False,False,False,
+2027-10-21,False,False,False,
+2027-10-22,False,False,False,
+2027-10-23,False,False,False,
+2027-10-24,False,False,False,
+2027-10-25,False,False,False,
+2027-10-26,False,False,False,
+2027-10-27,False,False,False,
+2027-10-28,False,False,False,
+2027-10-29,False,False,False,
+2027-10-30,False,False,False,
+2027-10-31,False,False,False,
+2027-11-01,False,False,False,
+2027-11-02,False,False,False,
+2027-11-03,False,False,False,
+2027-11-04,False,False,False,
+2027-11-05,False,False,False,
+2027-11-06,False,False,False,
+2027-11-07,False,False,False,
+2027-11-08,False,False,False,
+2027-11-09,False,False,False,
+2027-11-10,False,False,False,
+2027-11-11,False,False,False,
+2027-11-12,False,False,False,
+2027-11-13,False,False,False,
+2027-11-14,False,False,False,
+2027-11-15,False,False,False,
+2027-11-16,False,False,False,
+2027-11-17,False,False,False,
+2027-11-18,False,False,False,
+2027-11-19,False,False,False,
+2027-11-20,False,False,False,
+2027-11-21,False,False,False,
+2027-11-22,False,False,False,
+2027-11-23,False,False,False,
+2027-11-24,False,False,False,
+2027-11-25,False,False,False,
+2027-11-26,False,False,False,
+2027-11-27,False,False,False,
+2027-11-28,False,False,False,
+2027-11-29,False,False,False,
+2027-11-30,False,False,False,
+2027-12-01,False,False,False,
+2027-12-02,False,False,False,
+2027-12-03,False,False,False,
+2027-12-04,False,False,False,
+2027-12-05,False,False,False,
+2027-12-06,False,False,False,
+2027-12-07,False,False,False,
+2027-12-08,False,False,False,
+2027-12-09,False,False,False,
+2027-12-10,False,False,False,
+2027-12-11,False,False,False,
+2027-12-12,False,False,False,
+2027-12-13,False,False,False,
+2027-12-14,False,False,False,
+2027-12-15,False,False,False,
+2027-12-16,False,False,False,
+2027-12-17,False,False,False,
+2027-12-18,False,False,False,
+2027-12-19,False,False,False,
+2027-12-20,False,False,False,
+2027-12-21,False,False,False,
+2027-12-22,False,False,False,
+2027-12-23,False,False,False,
+2027-12-24,False,False,False,
+2027-12-25,False,False,False,
+2027-12-26,False,False,False,
+2027-12-27,False,False,False,
+2027-12-28,False,False,False,
+2027-12-29,False,False,False,
+2027-12-30,False,False,False,
+2027-12-31,False,False,False,
