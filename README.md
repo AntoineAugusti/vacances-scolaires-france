@@ -1,5 +1,5 @@
 [![Software License](https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square)](https://github.com/AntoineAugusti/vacances-scolaires-france/blob/master/LICENSE.md)
-![CircleCI](https://img.shields.io/circleci/project/github/AntoineAugusti/vacances-scolaires-france.svg?style=flat-square)
+![Tests](https://img.shields.io/github/actions/workflow/status/AntoineAugusti/vacances-scolaires-france/test.yml?branch=master&style=flat-square)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/vacances-scolaires-france.svg?style=flat-square)
 
 # Vacances scolaires France
