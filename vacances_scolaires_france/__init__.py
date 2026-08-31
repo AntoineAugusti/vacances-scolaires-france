@@ -109,3 +109,18 @@ class SchoolHolidayDates(object):
             for k, v in self.holidays_for_year(year).items()
             if self.is_holiday_for_zone(k, zone) and v["nom_vacances"] == name
         }
+
+    def holidays_between(self, start_date, end_date):
+        """
+        To get holidays between 2 dates
+        :param start_date: the 1st bound of the interval
+        :param end_date: the 2nd bound of the interval
+        :return: dict
+        """
+        start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').date()
+        end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').date()
+
+        res = {k: v for k, v in self.data.items() if start_date <= k <= end_date}
+        return res
+
+
