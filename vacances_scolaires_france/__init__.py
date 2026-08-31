@@ -96,7 +96,7 @@ class SchoolHolidayDates(object):
 
     def holidays_for_year_and_zone(self, year, zone):
         return {
-            k: v
+            k: v[self.zone_key(zone)]
             for k, v in self.holidays_for_year(year).items()
             if self.is_holiday_for_zone(k, zone)
         }
